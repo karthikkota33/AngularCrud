@@ -1,0 +1,158 @@
+<!-- <p>test-programs works!</p> -->
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sort Poker Hands</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row vertical-align">
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Player 1 Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{randomCards}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Player 2 Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player2Cards}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Player 3 Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player3Cards}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Player 4 Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player4Cards}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Player 5 Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player5Cards}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button class="btn-primary" (click)="generateDeckCards()">Shuffle</button>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sorted Poker Hands</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row vertical-align">
+                <div class="col-xs-8">
+                    <div class="row" style="color: purple;">
+                        <div class="col-xs-6">
+                            Player1 Sorted Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player1SortedCards}}
+                        </div>
+                        <div class="col-xs-6">
+                            Player2 Sorted Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player2SortedCards}}
+                        </div>
+                        <div class="col-xs-6">
+                            Player3 Sorted Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player3SortedCards}}
+                        </div>
+                        <div class="col-xs-6">
+                            Player4 Sorted Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player4SortedCards}}
+                        </div>
+                        <div class="col-xs-6">
+                            Player5 Sorted Cards
+                        </div>
+                        <div class="col-xs-6">
+                            : {{player5SortedCards}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Poker Hands Ranks</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row vertical-align">
+                <div class="col-xs-8">
+                    <div class="row" style="color: green;">
+                        <div class="col-xs-6">
+                            player1 Final
+                        </div>
+                        <div class="col-xs-6">
+                            : {{play1Final}}
+                        </div>
+                    </div>
+                    <div class="row" style="color: green;">
+                        <div class="col-xs-6">
+                            player2 Final
+                        </div>
+                        <div class="col-xs-6">
+                            : {{play2Final}}
+                        </div>
+                    </div>
+                    <div class="row" style="color: green;;">
+                        <div class="col-xs-6">
+                            player3 Final
+                        </div>
+                        <div class="col-xs-6">
+                            : {{play3Final}}
+                        </div>
+                    </div>
+                    <div class="row" style="color: green;">
+                        <div class="col-xs-6">
+                            player4 Final
+                        </div>
+                        <div class="col-xs-6">
+                            : {{play4Final}}
+                        </div>
+                    </div>
+                    <div class="row" style="color: green;">
+                        <div class="col-xs-6">
+                            player5 Final
+                        </div>
+                        <div class="col-xs-6">
+                            : {{play5Final}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

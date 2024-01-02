@@ -1,0 +1,53 @@
+<!-- <p>display-employee works!</p> -->
+
+<!-- {{employeeInput | json}} -->
+
+<div class="panel panel-primary" [class.panel-success]="employeeId === employeeInput.id" (click)="backToParent()">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{employeeInput.name}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row vertical-align">
+                <div class="col-xs-4">
+                    <img [src]="employeeInput.photoPath" />
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Gender
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employeeInput.gender}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Date of birth
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employeeInput.dateOfBirth | date}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Department
+                        </div>
+                        <div class="col-xs-6" [ngSwitch]="employeeInput.department">
+                            :
+                            <span *ngSwitchCase="1">HR</span>
+                            <span *ngSwitchCase="2">IT</span>
+                            <span *ngSwitchCase="3">Payroll</span>
+                            <span *ngSwitchDefault>N/A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button class="btn btn-primary" (click)="viewDetails()">View</button>
+        <button class="btn btn-primary" (click)="editDetails()">Edit</button>
+        <button class="btn btn-danger" (click)="deleteEmployee()">Delete</button>
+    </div>
+</div>

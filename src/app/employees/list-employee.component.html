@@ -1,0 +1,21 @@
+<!-- <p>list-employee works!</p>
+ -->
+<!-- <h3 *ngIf="this.eventValueFromChild">
+    {{this.eventValueFromChild.name + ' '+ this.eventValueFromChild.gender}}
+</h3> -->
+<!-- <div *ngFor="let employee of employees">
+    <app-display-employee [employeeInput]="employee" (notify)="valueFromChild($event)"></app-display-employee>
+</div> -->
+<div>
+    <input type="text" class="form-control" style="width: 300px;" [(ngModel)]="searchTerm" />
+</div>
+<div *ngFor="let employee of employees | employeeFilter:searchTerm ">
+    <!-- <div (click)="onCLick(employee.id)" class="clickCursor"> -->
+        <div class="clickCursor">
+        <app-display-employee [employeeInput]="employee"></app-display-employee>
+    </div>
+</div>
+<!-- <div>
+    <button (click)="getNextEmployee()" class="btn btn-primary">Next Employee</button>
+</div>
+<app-display-employee [employeeInput]="this.employeeData"></app-display-employee> -->
